@@ -1,0 +1,40 @@
+*{
+    /* background-image: url("Vector.png") */
+}
+.MERCH{
+    font-size: 14px;
+    font-weight: 700;
+    color: #CACFD3;
+}
+.name{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.price{
+    font-size: 32px;
+    font-weight: 700;
+    color: black; 
+}
+.para{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.countBtn{
+    padding: 5px;
+    background: none;
+    font-size: 14px;
+    border-color: #8A909D;
+}
+
+.atc{
+    background: none;
+    font-size: 14px;
+    font-weight: 700;
+    border-color: #8A909D;
+}
+
+/* .atc:hover{
+    background-image: linear-gradient(to right,#8A909D , #CACFD3);
+} */

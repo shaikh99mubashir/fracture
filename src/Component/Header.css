@@ -1,0 +1,82 @@
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .cont{
+    padding-right: 15px;
+    font-size: 14px;
+  }
+  .faq{
+    padding-left: 15px;
+    font-size: 14px;
+  }
+  .button{
+    background: none;
+    font-weight: 700;
+    border-color: #8A909D;
+    font-size: 14px;
+  }
+  .button1{
+    background: none;
+    font-weight: 700;
+    border-color: #8A909D;
+    font-size: 14px;
+  }
+  .button2{
+    background: none;
+    font-weight: 700;
+    border-color: #8A909D;
+    font-size: 14px;
+    border-left: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .buttonl{
+    height: 14px;
+    width: 12px;  
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .button:hover{
+    background-color: blueviolet;
+    color: white;
+  }
+  
+  @media (min-width: 50px) and (max-width: 570px) { 
+  
+    .logo{
+      width: 83px;
+      height: 32px;
+    }
+    .cont{
+      padding-right: 5px;
+      font-weight: 700;
+      font-size: 7px;
+    }
+    .faq{
+      padding-right: 5px;
+      font-weight: 700;
+      font-size: 7px;
+    }
+    
+    .button{
+      font-size: 7px;
+    }
+    .button1{
+      font-size: 7px;
+    }
+    .button2{
+      font-size: 7px;
+    }
+    .buttonl{
+      height: 9px;
+      width: 7px;  
+    }
+    
+  
+   }

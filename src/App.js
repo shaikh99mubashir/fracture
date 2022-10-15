@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Header from './Component/Header';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap'
+import BodyPart from './Component/BodyPart';
+import Footer from './Component/Footer';
+import Information from './Component/Information';
+import Shipping from './Component/Shipping';
+import Payment from './Component/Payment';
+import { Route, Routes} from 'react-router-dom'
+import { useEffect, useState } from 'react';
 function App() {
+  const [cartCount, setCartCount] = useState(0)
+
+  useEffect(()=> {
+    console.log(cartCount)
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      
+    <Header cartCount = {cartCount}/>
+  <Routes>
+    <Route path="/" element={<BodyPart setCartCount={setCartCount} cartCount = {cartCount} />} />
+    <Route path="information" element={<Information/>} />
+    <Route path="shipping" element={<Shipping/>} />
+    <Route path="payment" element={<Payment/>} />
+  </Routes>
+    <Footer/>
     </div>
   );
 }
